@@ -1,0 +1,112 @@
+/*! creating variables */
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Font-Google/Poppins-Regular.ttf);
+  font-weight: 400px;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../Font-Google/Poppins-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../Font-Google/Montserrat-Thin.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../Font-Google/Montserrat-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../Font-Google/Montserrat-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../Font-Google/Montserrat-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+
+
+/*! creating variables */
+:root {
+  --body-font: "Poppins";
+  --title-font: "Montserrat";
+}
+
+/*! Global styling */
+
+body {
+  font-family: var(--body-font);
+  background-image: url("/images/banner.png");
+
+}
+
+
+
+
+
+.navbar-custom{
+  background-color: #1E202B !important;
+}
+
+
+
+
+
+.bg-main-color {
+
+background-color: #2D303D;
+}
+
+.bg-sec-color{
+
+  background-color:#323544;
+}
+
+.item2{
+  background-color:#2f3034e6;
+
+}
+
+.item3{
+  background-color:#202021eb;
+
+}
+
+.logo{
+  width: 20%;
+
+
+}
+
+.logobox{
+  margin-left: 10%;
+}
+
+
+
+/*& Footer styling */
+.footer {
+  background-color: #1C1C1C;
+  color: white;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 40px;
+}
+.footer p {
+  margin: 0;
+  font-weight: 400px;
+}
+
+/*? End of Style==> By Eslam Gomaa*/

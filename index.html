@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api Assignment</title>
+    <!--! BS-CSS - Global styling -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--! Fontawsome - Global styling -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!--! CSS - Global styling -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!--^  nav section -->
+    <nav
+      class="navbar navbar-expand-lg | navbar-custom my-nav p-1 bg-dark-subtle mb-5 py-4"
+    >
+      <div class="container-fluid">
+  <div class="logobox">
+    <img class="logo" src="./images/logo@2x.png" alt="/images/logo@2x.png">
+    <a class="navbar-brand logo text-light" href="#">Weather</a>
+  
+  </div>
+
+
+        <div class="collapse navbar-collapse fs-5" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5">
+            <li class="nav-item px-2 border rounded-4 border-info mx-3">
+              <a
+                class="nav-link underline1 text-light"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-2 border rounded-4 border-info mx-3">
+              <a class="nav-link underline1 text-light" href="#about">News</a>
+            </li>
+            <li class="nav-item px-2 border rounded-4 border-info mx-3">
+              <a class="nav-link underline1 text-light" href="#services"
+                >Live Cameras</a
+              >
+            </li>
+            <li class="nav-item px-2 border rounded-4 border-info mx-3">
+              <a class="nav-link underline1 text-light" href="#work">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="text-center position-relative">
+      <!--^ user input -->
+      <input
+        type="text"
+        class="w-75 mx-auto rounded-4 py-2 bg-success-subtle px-3"
+        placeholder="Find your location"
+        name=""
+        id="searchBar"
+      />
+      <button
+        id="findResult"
+        class="position-absolute top-0 rounded-2 bg-info p-2"
+      >
+        Find
+      </button>
+    </div>
+
+    <!--^ All weather sections -->
+    <div class="main-container">
+      <div class="container px-3 py-5 text-center">
+        <div class="row gx-2 gy-3">
+          <!--^ weather today -->
+          <div class="item col-md-4 bg-sec-color m-0 rounded-3 text-light">
+            <div
+              class="d-flex bg-main-color justify-content-between align-items-center py-2 px-2 text-light rounded-4 m"
+            >
+              <p id="dayName">sunday</p>
+              <span>
+                <span id="currendate">30</span>
+                <span id="currentMonth">May</span>
+              </span>
+            </div>
+            <div class="content-item text-start pt-4 px-3">
+              <p id="updatedlocation">cairo</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span>
+                  <span id="curentTemp" class="fs-1">30</span>
+                  <span class="fw-bolder fs-3">C</span>
+                </span>
+                <img id="todayImg" src="./images/113.png" alt="" />
+              </div>
+              <p id="weatherInfo">Partly cloudy</p>
+            </div>
+            <div class="item-footer d-flex p-3 justify-content-around">
+              <div>
+                <img src="./images/icon-umberella.png" alt="" />
+                <p id="humidity">20</p>
+              </div>
+              <div>
+                <img src="./images/icon-wind.png" alt="" />
+                <p id="wind">18k</p>
+              </div>
+              <div>
+                <img src="./images/icon-compass.png" alt="" />
+                <p id="directionWind">east</p>
+              </div>
+            </div>
+          </div>
+
+          <!--^ weather Tomo -->
+          <div
+            class="item item2 col-md-4 bg-sec-color m-0 rounded-3 text-light"
+          >
+            <div
+              class="d-flex bg-main-color justify-content-center align-items-center py-2 px-2 text-light rounded-4 m"
+            >
+              <p class="text-center" id="tomorrowName">sunday</p>
+            </div>
+            <div class="flex-column text-center pt-4 px-3">
+              <div class="text-center">
+                <img
+                  class="d-block text-center mx-auto"
+                  id="tomImg"
+                  src="./images/113.png"
+                  alt=""
+                />
+                <span>
+                  <span id="tomorrowTemp" class="fs-1">30</span>
+                  <span class="fw-bolder fs-3">C</span>
+                </span>
+              </div>
+              <p id="weatherInfoTom">Partly cloudy</p>
+            </div>
+          </div>
+
+          <!--^ weather After Tomo -->
+          <div
+            class="item item3 col-md-4 bg-sec-color m-0 rounded-3 text-light"
+          >
+            <div
+              class="d-flex bg-main-color justify-content-center align-items-center py-2 px-2 text-light rounded-4 m"
+            >
+              <p class="text-center" id="afterTomorrowName">sunday</p>
+            </div>
+            <div class="flex-column text-center pt-4 px-3">
+              <div class="text-center">
+                <img
+                  class="d-block text-center mx-auto"
+                  id="afterTomImg"
+                  src="./images/113.png"
+                  alt=""
+                />
+
+                <span>
+                  <span id="afterTomorrowTemp" class="fs-1">30</span>
+                  <span class="fw-bolder fs-3">C</span>
+                </span>
+              </div>
+              <p id="weatherInfoAfter">Partly cloudy</p>
+            </div>
+          </div>
+
+          <!--^ Footer -->
+          <footer>
+            <div class="container py-5">
+              <div class="row">
+                <div class="col-8">
+                  <input
+                    type="text"
+                    class="w-75 mx-auto rounded-4 py-2 bg-success-subtle px-3"
+                    placeholder="Enter your email to subscribe"
+                    name=""
+                    id=""
+                  />
+                  <button id="findResult" class="rounded-2 bg-info p-2">
+                    Subscribe
+                  </button>
+
+                  <p class="text-light py-5">
+                    Copy Right 2018 © By <span class="red">Theme-fair</span> All
+                    Rights Reserved
+                  </p>
+                </div>
+                <div class="col-4">
+                  <div class="links">
+                    <a class="px-2 fs-2" href=""
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                    <a class="px-2 fs-2" href=""
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a class="px-2 fs-2" href=""
+                      ><i class="fa-brands fa-google"></i
+                    ></a>
+                    <a class="px-2 fs-2" href=""
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                  <div class="copy-right"></div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!--? End of HTML==> By Eslam Gomaa -->
+    <!--! BS-JS- - Global styling -->
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <!--! Main-JS- - Global styling -->
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
